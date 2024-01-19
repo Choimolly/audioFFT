@@ -498,8 +498,8 @@ int main(void)
  80005e0:	f000 f9b8 	bl	8000954 <MX_TIM3_Init>
   /* USER CODE BEGIN 2 */
   arm_rfft_fast_instance_f32 fftInstance;
-  HAL_ADC_Start_DMA(&hadc1, adcValue, 1024);
- 80005e4:	f44f 6280 	mov.w	r2, #1024	; 0x400
+  HAL_ADC_Start_DMA(&hadc1, adcValue, 2048);
+ 80005e4:	f44f 6200 	mov.w	r2, #2048	; 0x800
  80005e8:	4965      	ldr	r1, [pc, #404]	; (8000780 <main+0x1c0>)
  80005ea:	4866      	ldr	r0, [pc, #408]	; (8000784 <main+0x1c4>)
  80005ec:	f000 febc 	bl	8001368 <HAL_ADC_Start_DMA>

@@ -109,7 +109,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   arm_rfft_fast_instance_f32 fftInstance;
-  HAL_ADC_Start_DMA(&hadc1, adcValue, 1024);
+  HAL_ADC_Start_DMA(&hadc1, adcValue, 2048);
   HAL_TIM_Base_Start_IT(&htim3);
   ssd1306_Init();
 //  float32_t FFT_Input_Q15_f[50];
